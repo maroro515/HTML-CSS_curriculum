@@ -1,0 +1,103 @@
+.cataLog {
+    position: relative;
+    width: 800px;
+    margin: 64px auto  40px auto;
+    text-align: center;
+    font-size: 24px;
+}
+.badge {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    background: #8c97ff;
+    padding: 12px;
+    border-radius: 20px;
+}
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 420px;
+    margin: 0;
+    padding: 24px;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0 #ccccff;
+    text-align: left;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.image-area {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.image-area img {
+    width: 200px;
+    display: inline-block;
+}
+.text-area {
+    width: 460px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.product-name{
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.cart-icon{
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.description{
+    font-size: 14px;
+    margin-top: 12px;
+}
+.specs {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 8px;
+}
+.spec-item{
+    background: #eee;
+    display: inline-block;
+    padding: 2px 6px;
+    margin-right: 8px;
+    font-size: 12px;
+}
+.price {
+    margin-top: 24px;
+    font-size: 16px;
+}
+.price-yen-tax{
+    font-size: 12px;
+}
+.price-number{
+    font-size: 16px;
+}
+.tags {
+    padding: 0;
+    margin-top: 12px;
+    list-style: none;
+}
+.tags li {
+    display: block;
+    margin-right: 0;
+}
+.tags a {
+    color: #8c97ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.tags a:hover {
+    text-decoration: underline;
+    color: #5a6ddd;
+}
+
