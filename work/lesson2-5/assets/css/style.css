@@ -1,11 +1,19 @@
-.cataLog {
-    position: relative;
-    width: 800px;
-    margin: 64px auto  40px auto;
-    text-align: center;
-    font-size: 24px;
+.l-wrapper {
+    width: 100%;
 }
-.badge {
+.l-main {
+    padding: 64px 0;
+}
+.p-catalog {
+    width: 800px;
+    margin: 0 auto;
+}
+.p-catalog__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.c-badge {
     display: inline-block;
     margin-bottom: 16px;
     font-size: 16px;
@@ -13,91 +21,68 @@
     padding: 12px;
     border-radius: 20px;
 }
-.card {
-    display: inline-block;
-    vertical-align: top;
-    width: 420px;
-    margin: 0;
-    padding: 24px;
+.c-card {
+    padding: 28px;
     background: #fff;
     border-radius: 20px;
     border: 2px solid #000;
     box-shadow: 8px 8px 0 #ccccff;
     text-align: left;
 }
-.img {
-    max-width: 100%;
-    height: auto;
-}
-.image-area {
+.c-card__imgArea {
     width: 200px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin-bottom: 26px;
+    margin: 0 0 26px;
 }
-.image-area img {
-    width: 200px;
-    display: inline-block;
+.c-card__imgArea img {
+    width: 100%;
 }
-.text-area {
+.c-card__body {
     width: 460px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
+    margin: 0 auto;
 }
-.product-name{
+.c-card__name {
     font-size: 18px;
-    margin-top: 0px;
+    margin-bottom: 12px;
+}
+.c-card__cartIcon {
+    width: 24px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.c-card__description {
+    font-size: 14px;
     margin-bottom: 8px;
 }
-.cart-icon{
-    width: 24px;
-    vertical-align: middle;
-    margin-left: 8px;
+.c-card__specs {
+    margin-bottom: 24px;
 }
-.description{
-    font-size: 14px;
-    margin-top: 12px;
-}
-.specs {
+
+.c-card__specItem {
     font-size: 12px;
-    text-align: left;
-    margin-top: 8px;
-}
-.spec-item{
     background: #eee;
     display: inline-block;
-    padding: 2px 6px;
-    margin-right: 8px;
+}
+.c-card__price {}
+.c-card__priceUnit {
     font-size: 12px;
 }
-.price {
-    margin-top: 24px;
+.c-card__priceNumber {
     font-size: 16px;
 }
-.price-yen-tax{
-    font-size: 12px;
-}
-.price-number{
-    font-size: 16px;
-}
-.tags {
-    padding: 0;
-    margin-top: 12px;
+.c-card__tags {
     list-style: none;
+    padding: 0;
+    margin-bottom: 28px;
 }
-.tags li {
-    display: block;
-    margin-right: 0;
+.c-card__tagItem {
+    margin-bottom: 4px;
 }
-.tags a {
-    color: #8c97ff;
+.c-card__tagItem a {
     font-size: 14px;
+    color: #8c97ff;
     text-decoration: none;
 }
-.tags a:hover {
+.c-card__tagItem a:hover {
     text-decoration: underline;
-    color: #5a6ddd;
 }
 
