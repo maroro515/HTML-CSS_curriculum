@@ -5,7 +5,7 @@
     padding: 64px 0;
 }
 .p-catalog {
-    width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 .p-catalog__title {
@@ -16,12 +16,13 @@
 .c-badge {
     display: inline-block;
     margin-bottom: 16px;
+    color: #fff;
     font-size: 16px;
     background: #8c97ff;
-    padding: 12px;
+    padding: 3px 12px;
     border-radius: 20px;
 }
-.c-card {
+.p-card {
     padding: 28px;
     background: #fff;
     border-radius: 20px;
@@ -29,45 +30,43 @@
     box-shadow: 8px 8px 0 #ccccff;
     text-align: left;
 }
-.c-card__imgArea {
+.p-card__imgArea {
     width: 200px;
-    margin: 0 0 26px;
+    margin: 0 auto 26px;
 }
-.c-card__imgArea img {
+.p-card__imgArea img {
     width: 100%;
 }
-.c-card__body {
-    width: 460px;
-    margin: 0 auto;
-}
-.c-card__name {
+.p-card__name {
     font-size: 18px;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 .c-card__cartIcon {
     width: 24px;
     margin-left: 8px;
     vertical-align: middle;
 }
-.c-card__description {
+.p-card__description {
     font-size: 14px;
     margin-bottom: 8px;
 }
-.c-card__specs {
+.p-card__specs {
     margin-bottom: 24px;
 }
 
-.c-card__specItem {
+.c-specItem {
     font-size: 12px;
     background: #eee;
     display: inline-block;
+    padding: 2px 6px;
+    margin-right: 4px;
 }
-.c-card__price {}
-.c-card__priceUnit {
-    font-size: 12px;
-}
-.c-card__priceNumber {
+.c-price {
     font-size: 16px;
+}
+.c-priceUnit {
+    font-size: 12px;
 }
 .c-card__tags {
     list-style: none;
