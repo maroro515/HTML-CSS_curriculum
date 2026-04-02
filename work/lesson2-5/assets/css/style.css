@@ -15,12 +15,31 @@
 }
 .c-badge {
     display: inline-block;
-    margin-bottom: 16px;
     color: #fff;
     font-size: 16px;
     background: #8c97ff;
     padding: 3px 12px;
     border-radius: 20px;
+}
+.c-specItem{
+    font-size: 12px;
+    background: #eee;
+    display: inline-block;
+    padding: 2px 6px;
+}
+.c-price{
+    font-size: 16px;
+}
+.c-priceUnit{
+    font-size: 12px;
+}
+.c-hashTag{
+    font-size: 14px;
+    color: #8c97ff;
+    text-decoration: none;
+}
+.c-hashTag:hover{
+    text-decoration: underline;
 }
 .p-card {
     padding: 28px;
@@ -42,7 +61,7 @@
     margin-bottom: 12px;
     font-weight: bold;
 }
-.c-card__cartIcon {
+.p-card__cartIcon {
     width: 24px;
     margin-left: 8px;
     vertical-align: middle;
@@ -54,34 +73,20 @@
 .p-card__specs {
     margin-bottom: 24px;
 }
-
-.c-specItem {
-    font-size: 12px;
-    background: #eee;
-    display: inline-block;
-    padding: 2px 6px;
-    margin-right: 4px;
-}
-.c-price {
-    font-size: 16px;
-}
-.c-priceUnit {
-    font-size: 12px;
-}
-.c-card__tags {
+.p-card__tags {
     list-style: none;
     padding: 0;
     margin-bottom: 28px;
 }
-.c-card__tagItem {
+.p-card__tagItem {
     margin-bottom: 4px;
 }
-.c-card__tagItem a {
-    font-size: 14px;
-    color: #8c97ff;
-    text-decoration: none;
+.u-mb-16{
+    margin-bottom: 16px;
 }
-.c-card__tagItem a:hover {
-    text-decoration: underline;
+.u-mb-4{
+    margin-bottom: 4px;
 }
-
+.u-mr-4{
+    margin-right: 4px;
+}
