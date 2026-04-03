@@ -1,0 +1,85 @@
+.l-wrapper {
+    width: 100%;
+}
+.l-main {
+    padding: 64px 0;
+}
+.p-catalog {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.p-catalog__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.c-badge {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    background: #8c97ff;
+    padding: 3px 12px;
+    border-radius: 20px;
+}
+.c-specItem {
+    font-size: 12px;
+    background: #eee;
+    display: inline-block;
+    padding: 2px 6px;
+}
+.c-price {
+    font-size: 16px;
+}
+.c-priceUnit {
+    font-size: 12px;
+}
+.c-hashTag {
+    font-size: 14px;
+    color: #8c97ff;
+    text-decoration: none;
+}
+.c-hashTag:hover {
+    text-decoration: underline;
+}
+.p-card {
+    padding: 28px;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0 #ccccff;
+    text-align: left;
+}
+.p-card__imgArea {
+    width: 200px;
+    margin: 0 auto 26px;
+}
+.p-card__imgArea img {
+    width: 100%;
+}
+.p-card__name {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.p-card__cartIcon {
+    width: 24px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.p-card__description {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.p-card__specs {
+    margin-bottom: 24px;
+}
+.p-card__tags {
+    list-style: none;
+    padding: 0;
+}
+.p-card__tagItem {
+    margin-bottom: 4px;
+}
+.u-mb-16 {
+    margin-bottom: 16px;
+}
