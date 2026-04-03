@@ -21,24 +21,24 @@
     padding: 3px 12px;
     border-radius: 20px;
 }
-.c-specItem{
+.c-specItem {
     font-size: 12px;
     background: #eee;
     display: inline-block;
     padding: 2px 6px;
 }
-.c-price{
+.c-price {
     font-size: 16px;
 }
-.c-priceUnit{
+.c-priceUnit {
     font-size: 12px;
 }
-.c-hashTag{
+.c-hashTag {
     font-size: 14px;
     color: #8c97ff;
     text-decoration: none;
 }
-.c-hashTag:hover{
+.c-hashTag:hover {
     text-decoration: underline;
 }
 .p-card {
@@ -76,17 +76,10 @@
 .p-card__tags {
     list-style: none;
     padding: 0;
-    margin-bottom: 28px;
 }
 .p-card__tagItem {
     margin-bottom: 4px;
 }
-.u-mb-16{
+.u-mb-16 {
     margin-bottom: 16px;
-}
-.u-mb-4{
-    margin-bottom: 4px;
-}
-.u-mr-4{
-    margin-right: 4px;
 }
