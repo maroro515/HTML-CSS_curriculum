@@ -9,6 +9,7 @@
 .p-catalog {
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 .p-catalog__title {
     font-size: 24px;
@@ -86,17 +87,20 @@
     margin-bottom: 16px;
 }
 .p-new {
-    max-width: 900px;
-    margin: ;
+    margin-bottom: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .c-badge--green {
     background: #7fe6a8;
-    font-size: 16px;
 }
 .p-new__list {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
+    list-style: none;
+    padding: 0;
 }
 .p-new__item {
     display: flex;
@@ -107,8 +111,8 @@
     border: 2px solid #000;
     border-radius: 20px;
     box-shadow: 6px 6px 0 #7fe6a8;
-    position: relative;
     transition: 0.3s;
+    width: calc((100% - 96px) / 4);
 }
 .p-new__item:hover {
     transform: translateY(-4px);
@@ -117,7 +121,7 @@
     width: 80px;
     flex-shrink: 0;
 }
-.p-new__item__body {
+.p-new__body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +136,7 @@
     font-size: 16px;
     white-space: nowrap;
 }
-.p-new__btn {
+.c-btn {
     margin-top: 8px;
     padding: 6px 12px;
     font-size: 12px;
@@ -142,12 +146,12 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.p-new__btn:hover {
+.c-btn:hover {
     background: #000;
     color: #fff;
 }
 @media screen and (max-width: 768px) {
-    .p-new__list {
-    grid-template-columns: 1fr;
+    .p-new__item {
+    width: 100%;
     }
 }
