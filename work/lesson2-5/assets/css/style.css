@@ -4,12 +4,12 @@
   margin: 0 auto;
 }
 .l-main {
-  padding: 64px 0;
+  padding: 64px 0 160px;
 }
 .p-catalog {
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 .p-catalog__title {
   font-size: 24px;
@@ -87,10 +87,8 @@
   margin-bottom: 16px;
 }
 .p-new {
-  margin-bottom: 80px;
+  margin: 0 auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .c-badge--green {
   background: #7fe6a8;
@@ -118,7 +116,7 @@
   transform: translateY(-4px);
 }
 .p-new__item img {
-  width: 96px;
+  width: 110px;
   height: auto;
   flex-shrink: 0;
 }
