@@ -17,7 +17,7 @@
 }
 .c-badge {
   display: inline-block;
-  padding: 3px 12px;
+  padding: 3px 12px 3px 12px;
   border-radius: 20px;
   background: #8c97ff;
   color: #fff;
@@ -31,7 +31,7 @@
 }
 .c-specItem {
   display: inline-block;
-  padding: 2px 6px;
+  padding: 2px 6px 2px 6px;
   background: #eee;
   font-size: 12px;
 }
@@ -41,9 +41,9 @@
 .c-priceUnit {
   font-size: 12px;
 }
-.c-price--sale,
-.c-price--sale .c-priceUnit {
+.c-price--sale {
   color: #fb5b55;
+  font-weight: bold;
 }
 .c-hashTag {
   color: #8c97ff;
@@ -54,7 +54,7 @@
   text-decoration: underline;
 }
 .c-btn {
-  padding: 6px 12px;
+  padding: 6px 12px 6px 12px;
   border: none;
   border-radius: 20px;
   background: #f0f0f0;
@@ -67,7 +67,7 @@
   color: #fff;
 }
 .p-card {
-  padding: 28px;
+  padding: 28px 28px 28px 28px;
   border: 2px solid #000;
   border-radius: 20px;
   background: #fff;
@@ -124,11 +124,11 @@
   width: calc((100% - 96px) / 4);
   gap: 16px;
   align-items: center;
-  padding: 16px;
+  padding: 16px 16px 16px 16px;
   border: 2px solid #000;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 6px 6px 0 #7fe6a8;
+  box-shadow: 8px 8px 0 #7fe6a8;
   transition: 0.3s;
 }
 .p-new__item:hover {
@@ -172,7 +172,7 @@
 }
 .p-sale__item {
   min-width: 190px;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   border: 1px solid #222;
   border-radius: 20px;
   background: #fff;
@@ -185,7 +185,7 @@
   top: 8px;
   left: 8px;
   z-index: 3;
-  padding: 6px 12px;
+  padding: 6px 12px 6px 12px;
   background: #fb5b55;
   color: #fff;
   font-size: 12px;
@@ -217,7 +217,7 @@
   width: 100%;
   transform: translateY(-50%);
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-align: center;
