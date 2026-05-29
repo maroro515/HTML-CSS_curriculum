@@ -298,21 +298,26 @@
   gap: 32px;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 .p-ranking__item {
   position: relative;
   display: flex;
+  height: 100%;
   overflow: hidden;
   border: 2px solid #000;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 8px 8px 0 #b3d0ff;
-  transition: transform 0.3s;
+  box-shadow: 8px 8px 0 #b3d9ff;
+  transition: transform 0.2s ease;
+}
+
+.p-ranking__item:hover {
+  transform: translateY(-4px);
 }
 
 .p-ranking__item::before {
-  content: attr(data-rank) "位";
   position: absolute;
   top: 12px;
   left: 12px;
@@ -327,10 +332,7 @@
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-}
-
-.p-ranking__item:hover {
-  transform: translateY(-4px);
+  content: attr(data-rank) "位";
 }
 
 .p-ranking__item:nth-child(-n + 2) {
@@ -344,9 +346,12 @@
 .p-ranking__imgWrap,
 .p-ranking__body {
   width: 50%;
+  flex: 0 0 50%;
 }
 
 .p-ranking__imgWrap {
+  display: flex;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -357,22 +362,17 @@
   object-fit: cover;
 }
 
-.p-ranking__item:nth-child(-n + 2) .p-ranking__imgWrap img {
-  object-fit: cover;
-  padding: 0;
-}
-
 .p-ranking__body {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 24px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 16px;
 }
 
 .p-ranking__name {
-  margin-bottom: 16px;
-  font-size: 16px;
-  font-weight: normal;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 .p-ranking__item:nth-child(-n + 2) .p-ranking__name {
@@ -380,8 +380,15 @@
   font-weight: bold;
 }
 
-.p-ranking__item:nth-child(n + 3) .p-ranking__name {
+.p-ranking__item:nth-child(3) .p-ranking__name,
+.p-ranking__item:nth-child(4) .p-ranking__name,
+.p-ranking__item:nth-child(5) .p-ranking__name {
   font-size: 16px;
+  font-weight: normal;
+}
+
+.p-ranking__item:nth-child(n + 6) .p-ranking__name {
+  font-size: 12px;
   font-weight: normal;
 }
 
@@ -392,13 +399,16 @@
 .p-ranking__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px 8px;
+  align-content: flex-start;
+  max-width: 170px;
   padding: 0;
   list-style: none;
 }
 
 .p-ranking__tagItem {
   font-size: 14px;
+  line-height: 1.4;
 }
 
 .c-hashTag--blue {
@@ -474,5 +484,6 @@
   .p-ranking__imgWrap,
   .p-ranking__body {
     width: 50%;
+    flex: 0 0 50%;
   }
 }
