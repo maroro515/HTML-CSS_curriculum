@@ -61,7 +61,7 @@
 }
 
 .c-price--ranking {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .c-hashTag {
@@ -366,7 +366,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 16px;
+  padding: 0px 10px;
 }
 
 .p-ranking__name {
@@ -402,7 +402,6 @@
 }
 
 .p-ranking__tags {
-  min-height: 48px;
   padding: 0;
   list-style: none;
 }
@@ -410,7 +409,6 @@
 .p-ranking__tagItem {
   display: inline;
   font-size: 14px;
-  line-height: 1.4;
 }
 
 .c-hashTag--blue {
