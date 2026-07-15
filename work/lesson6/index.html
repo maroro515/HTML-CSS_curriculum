@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="expires" content="604800">
-    <meta name="format-detection" content="email=no,telephone=no,address=no">
-    <title>にせLINE</title>
-    <meta name="description" content="にせLINEです">
-    <link rel="icon" href="./assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <header class="l-header">
-      <div class="l-header__inner">
-        ○○さんグループ
-      </div>
-    </header>
-    <main class="l-main">
-      <div class="chat">
-        <ul class="chat__list">
-          <li class="chat__item chat__item--right">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
-          <li class="chat__item chat__item--left">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
-          <li class="chat__item chat__item--right">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
-          <li class="chat__item chat__item--left">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
-          <li class="chat__item chat__item--right">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</li>
-        </ul>
-      </div>
-    </main>
-    <footer class="l-footer">
-      <div class="l-footer__inner">
-        <form class="chat__form">
-          <input type="text" class="chat__input" placeholder="メッセージを入力">
-          <button type="button" class="chat__icon">+</button>
-          <button type="button" class="chat__btn">送信</button>
-        </form>
-      </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>にせLINE</title>
+  <meta name="description" content="にせLINEです">
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+<header class="l-header">
+  <div class="l-header__inner">
+    <button class="l-header__back" type="button">
+      <span class="material-symbols-outlined">arrow_back_ios</span>
+    </button>
+    <h1 class="l-header__title">○○さんグループ</h1>
+    <div class="l-header-icon">
+      <button type="button">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined">call</span>
+      </button>
+      <button type="button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="l-main">
+  <div class="chat">
+    <ul class="chat__list">
+      <li class="chat__item chat__item--right">
+        <span class="material-symbols-outlined chat__avatar">account_circle</span>
+        <p class="chat__text">
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </li>
+
+      <li class="chat__item chat__item--left">
+        <span class="material-symbols-outlined chat__avatar">account_circle</span>
+        <p class="chat__text">
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </li>
+
+      <li class="chat__item chat__item--right">
+        <span class="material-symbols-outlined chat__avatar">account_circle</span>
+        <p class="chat__text">
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </li>
+
+      <li class="chat__item chat__item--left">
+        <span class="material-symbols-outlined chat__avatar">account_circle</span>
+        <p class="chat__text">
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </li>
+
+      <li class="chat__item chat__item--right">
+        <span class="material-symbols-outlined chat__avatar">account_circle</span>
+        <p class="chat__text">
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </li>
+    </ul>
+  </div>
+</main>
+<footer class="l-footer">
+  <div class="l-footer__inner">
+    <form class="chat__form">
+      <button class="chat__icon" type="button">
+        <span class="material-symbols-outlined">add</span>
+      </button>
+      <input class="chat__input" type="text" placeholder="メッセージを入力">
+      <button class="chat__btn" type="button">送信</button>
+    </form>
+  </div>
+</footer>
+</body>
 </html>
