@@ -7,7 +7,7 @@ body {
 .l-header {
     height: 60px;
     background-color: rgba(111, 142, 189, 0.9);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 
-.l-header-icon {
+.l-header__icon {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -53,12 +53,8 @@ body {
     font-size: 48px;
 }
 
-.l-header-icon .material-icons {
-    font-size: 30px;
-}
-
 .l-main {
-    padding: 0px 10px 80px;
+    padding: 60px 10px 80px;
 }
 
 .chat {
