@@ -45,16 +45,20 @@ body {
     gap: 8px;
 }
 
-.material-symbols-outlined {
-    font-size: 24px;
+.material-icons {
+    font-size: 30px;
 }
 
-.l-header__back .material-symbols-outlined {
+.l-header__back .material-icons {
+    font-size: 48px;
+}
+
+.l-header-icon .material-icons {
     font-size: 30px;
 }
 
 .l-main {
-    padding: 20px 10px 80px;
+    padding: 0px 10px 80px;
 }
 
 .chat {
@@ -71,8 +75,8 @@ body {
 .chat__item {
     display: flex;
     align-items: flex-end;
+    width: 100%;
     gap: 10px;
-    margin-bottom: 0;
 }
 
 .chat__item--left {
@@ -80,12 +84,11 @@ body {
 }
 
 .chat__item--right {
-    justify-content: flex-end;
     flex-direction: row-reverse;
 }
 
 .chat__avatar {
-    font-size: 60px;
+    font-size: 60px !important;
     flex-shrink: 0;
 }
 
@@ -95,7 +98,6 @@ body {
 
 .chat__item--right .chat__avatar {
     color: #000;
-    flex-shrink: 0;
     margin-bottom: 0;
 }
 
@@ -105,16 +107,19 @@ body {
     border-radius: 20px;
     font-size: 14px;
     line-height: 1.5;
-    max-width: calc(100% - 140px);
+    max-width: 85%;
+    min-height: auto;
     word-break: break-word;
 }
 
 .chat__item--left .chat__text {
     background-color: #fff;
+    margin-right: auto;
 }
 
 .chat__item--right .chat__text {
     background-color: #96db90;
+    margin-left: auto;
 }
 
 .chat__item--left .chat__text::before {
@@ -164,7 +169,7 @@ body {
     background: transparent;
 }
 
-.chat__icon .material-symbols-outlined {
+.chat__icon .material-icons {
     font-size: 36px;
 }
 
