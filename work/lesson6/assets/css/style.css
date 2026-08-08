@@ -98,23 +98,22 @@ body {
 
 .p-chat__text {
   position: relative;
-  width: 85%;
+  width: 100%;
   padding: 10px;
   border-radius: 12px;
   font-size: 14px;
   line-height: 1.5;
-  max-width: 85%;
   word-break: break-word;
 }
 
 .p-chat__item--left .p-chat__text {
   background-color: #fff;
-  margin-right: auto;
+  margin-left: 15px;
 }
 
 .p-chat__item--right .p-chat__text {
   background-color: #96db90;
-  margin-left: auto;
+  margin-right: 15px;
 }
 
 .p-chat__item--left .p-chat__text::before {
@@ -180,11 +179,11 @@ body {
 }
 
 div.material-icons__bg {
-    background: #e6e6e6;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    }
+  background: #e6e6e6;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  }
