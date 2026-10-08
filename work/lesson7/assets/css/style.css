@@ -99,7 +99,6 @@ a {
 }
 
 .c-sectionTitle {
-    margin-bottom: 10px;
     color: #5a5a5a;
     font-size: 30px;
     font-size: 3rem;
@@ -112,24 +111,32 @@ a {
     font-size: 1.8rem;
 }
 
-.c-sectionLead::after {
+.p-about__heading,
+.p-work__heading,
+.p-blog__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.p-about__heading::after,
+.p-work__heading::after,
+.p-blog__heading::after {
     display: block;
     width: 100px;
     height: 2px;
-    margin: 30px auto 0;
+    margin-top: 32px;
     background-color: #fcc72c;
     content: "";
 }
 
 .p-about {
-    padding: 60px 50px 100px;
+    padding: 60px 15px 100px;
 }
 
 .p-about__heading {
-    text-align: center;
-}
-
-.p-about .c-sectionLead {
     margin-bottom: 30px;
 }
 
@@ -153,8 +160,37 @@ a {
     background-color: #efefef;
 }
 
-.p-work__heading {
+.p-work__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.p-work__item {
+    width: 100%;
+    max-width: 334px;
     text-align: center;
+}
+
+.p-work__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 30px;
+}
+
+.p-work__itemTitle {
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.p-work__text {
+    color: #8a8a8a;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .p-blog {
@@ -163,7 +199,6 @@ a {
 
 .p-blog__heading {
     margin-bottom: 50px;
-    text-align: center;
 }
 
 .p-blog__list {
@@ -172,6 +207,10 @@ a {
 
 .p-blog__item {
     margin-bottom: 80px;
+}
+
+.p-blog__image {
+    margin-bottom: 20px;
 }
 
 .p-blog__itemTitle {
@@ -197,10 +236,14 @@ a {
     justify-content: center;
     width: 100%;
     height: 42px;
+    padding: 0;
+    border: none;
     border-radius: 3px;
     background-color: #fcc72c;
     color: #ffffff;
+    font-family: inherit;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -252,6 +295,18 @@ a {
         padding-left: 50px;
     }
 
+    .p-about__heading .c-sectionTitle {
+    line-height: 1;
+    }
+
+    .p-about__heading {
+        gap: 30px;
+    }
+
+    .p-about__heading::after {
+        margin-top: 12px;
+    }
+
     .p-about__images {
         display: flex;
         flex-wrap: wrap;
@@ -281,15 +336,17 @@ a {
     }
 
     .p-work__list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
         margin-top: 60px;
     }
 
     .p-work__item {
-        width: 33.333%;
-        margin-bottom: 40px;
-        padding: 0 30px;
+        width: auto;
+        max-width: none;
+        margin-bottom: 0;
+        padding: 0;
         text-align: center;
     }
 
@@ -343,9 +400,14 @@ a {
         gap: 40px;
     }
 
+    .p-blog__item:nth-child(even) .p-blog__article {
+        flex-direction: row-reverse;
+    }
+
     .p-blog__image {
         width: 400px;
         flex-shrink: 0;
+        margin-bottom: 0;
     }
 
     .p-blog__body {
